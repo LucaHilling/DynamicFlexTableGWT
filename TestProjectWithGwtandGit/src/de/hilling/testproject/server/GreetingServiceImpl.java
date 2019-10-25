@@ -1,6 +1,6 @@
 package de.hilling.testproject.server;
 
-import de.hilling.testproject.client.GreetingService;
+import de.hilling.testproject.client.Service;
 import de.hilling.testproject.shared.FieldVerifier;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
@@ -8,7 +8,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
  * The server-side implementation of the RPC service.
  */
 @SuppressWarnings("serial")
-public class GreetingServiceImpl extends RemoteServiceServlet implements GreetingService {
+public class GreetingServiceImpl extends RemoteServiceServlet implements Service {
 
 	public String greetServer(String input) throws IllegalArgumentException {
 		// Verify that the input is valid. 
